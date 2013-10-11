@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window
+	x:Class="中文分词.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	Title="MainWindow"
+	Width="525"
+	Name="window1"
+	Loaded="Window_Loaded"
+	Closing="Window_Closing"
+	Height="359" Visibility="Visible">
+	<Grid>
+		<Button
+			Content="分词"
+			Name="btnSeparate"
+			Click="btnSeparate_Click"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Margin="142.5,271.5,0,0"
+			Width="75"
+			Height="23" />
+		<TextBox
+			TextWrapping="Wrap"
+			Name="tbText1"
+			AutoWordSelection="False"
+			AcceptsReturn="True"
+			UndoLimit="0"
+			VerticalScrollBarVisibility="Auto"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Bottom"
+			Margin="37.5,0,0,201.5"
+			Width="440"
+			Height="87" />
+		<TextBox
+			TextWrapping="Wrap"
+			Name="tbText2"
+			AutoWordSelection="False"
+			AcceptsReturn="True"
+			UndoLimit="0"
+			VerticalScrollBarVisibility="Auto"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Bottom"
+			Margin="37.5,0,0,75.5"
+			Width="440"
+			Height="87" />
+		<TextBlock
+			Name="tbTime"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Stretch"
+			VerticalAlignment="Stretch"
+			Margin="394,257.5,39.5,44.5"
+			Width="83.5" />
+		<TextBlock
+			Name="tbSmiler"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Stretch"
+			VerticalAlignment="Stretch"
+			Margin="394,292.5,39.5,10"
+			Width="83.5" />
+		<Button
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Margin="250,271.5,0,0"
+			Width="75"
+			Height="23"
+			Content="计算相似度"
+			Name="btnSmiliarity"
+			Click="btnSmiliarity_Click" />
+        <Button Name="btnOpenDict" Content="载入词典" HorizontalAlignment="Left" Margin="37.5,271.5,0,0" VerticalAlignment="Top" Width="75" Height="23" Click="btnOpenDict_Click"/>
+    </Grid>
+</Window>
